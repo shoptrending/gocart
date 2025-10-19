@@ -1,22 +1,14 @@
-'use client'
+export const runtime = 'edge';
 
-import Loading from "@/components/Loading"
-import { useRouter } from "next/navigation"
-import { useEffect } from "react"
+export default function LoadingPage({ searchParams }) {
+  const nextUrl = searchParams?.nextUrl;
 
-export default function LoadingPage() {
-    const router = useRouter()
+  if (nextUrl) {
+    return new Response(null, {
+      status: 302,
+      headers: { Location: nextUrl },
+    });
+  }
 
-    useEffect(() => {
-        const params = new URLSearchParams(window.location.search)
-        const url = params.get('nextUrl')
-
-        if (url) {
-            setTimeout(() => {
-                router.push(url)
-            }, 8000)
-        }
-    }, [router])
-
-    return <Loading />
+  return <div>Loading...</div>;
 }
