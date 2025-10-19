@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoadRunner Express - Professional Transport Services</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.8) 0%, rgba(16, 185, 129, 0.8) 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <img class="h-12" src="http://static.photos/transport/1200x630/42" alt="RoadRunner Express Logo">
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-primary-600 bg-primary-100">Home</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-600">Services</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-600">Fleet</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-600">About</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-primary-600">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-4 flex items-center md:ml-6">
+                        <button class="bg-primary-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary-700 transition duration-300">
+                            Get a Quote
+                        </button>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative hero-gradient">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover opacity-20" src="http://static.photos/transport/1200x630/1" alt="Truck on highway">
+        </div>
+        <div class="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Your Reliable Transport Partner
+            </h1>
+            <p class="mt-6 text-xl text-gray-100 max-w-3xl">
+                Fast, safe, and professional transportation services across the nation. We deliver your cargo with care and precision.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-gray-100 md:py-4 md:text-lg md:px-10 transition duration-300">
+                    Get Started
+                </a>
+                <a href="#" class="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-700 bg-opacity-80 hover:bg-opacity-100 md:py-4 md:text-lg md:px-10 transition duration-300">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Transport Services
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Comprehensive solutions for all your transportation needs
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <img class="h-48 w-full object-cover" src="http://static.photos/transport/640x360/10" alt="Truck">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-primary-600 font-semibold">Ground Transport</div>
+                        <h3 class="mt-2 text-xl font-semibold text-gray-900">Freight Shipping</h3>
+                        <p class="mt-2 text-gray-600">
+                            Reliable and timely transportation of goods with our modern fleet.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-primary-600 hover:text-primary-800 font-medium flex items-center">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <img class="h-48 w-full object-cover" src="http://static.photos/transport/640x360/20" alt="Warehouse">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-primary-600 font-semibold">Logistics</div>
+                        <h3 class="mt-2 text-xl font-semibold text-gray-900">Warehousing</h3>
+                        <p class="mt-2 text-gray-600">
+                            Secure storage solutions with 24/7 monitoring and inventory management.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-primary-600 hover:text-primary-800 font-medium flex items-center">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <img class="h-48 w-full object-cover" src="http://static.photos/transport/640x360/30" alt="Special transport">
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-primary-600 font-semibold">Specialized</div>
+                        <h3 class="mt-2 text-xl font-semibold text-gray-900">Heavy Haulage</h3>
+                        <p class="mt-2 text-gray-600">
+                            Transport of oversized and heavy loads with specialized equipment.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#" class="text-primary-600 hover:text-primary-800 font-medium flex items-center">
+                                Learn more
+                                <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fleet Showcase -->
+    <div class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    Our Modern Fleet
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Equipped with the latest technology for safety and efficiency
+                </p>
+            </div>
+
+            <div class="mt-12 grid gap-5 md:grid-cols-3">
+                <div class="overflow-hidden rounded-lg shadow-lg bg-white">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/transport/640x360/40" alt="Truck">
+                    <div class="px-6 py-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Semi-Trailer Trucks</h3>
+                        <p class="mt-2 text-gray-600">
+                            50+ units with 48ft trailers for long-haul transportation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden rounded-lg shadow-lg bg-white">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/transport/640x360/50" alt="Refrigerated truck">
+                    <div class="px-6 py-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Refrigerated Trucks</h3>
+                        <p class="mt-2 text-gray-600">
+                            Temperature-controlled transport for perishable goods.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="overflow-hidden rounded-lg shadow-lg bg-white">
+                    <img class="w-full h-64 object-cover" src="http://static.photos/transport/640x360/60" alt="Flatbed truck">
+                    <div class="px-6 py-4">
+                        <h3 class="text-xl font-semibold text-gray-800">Flatbed Trucks</h3>
+                        <p class="mt-2 text-gray-600">
+                            Ideal for oversized loads and heavy equipment transportation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="bg-primary-600">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                    Trusted by businesses nationwide
+                </h2>
+                <p class="mt-3 text-xl text-primary-100 sm:mt-4">
+                    Our commitment to excellence has earned us industry recognition and loyal customers.
+                </p>
+            </div>
+            <div class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
+                <div>
+                    <p class="text-5xl font-extrabold text-white">
+                        15+
+                    </p>
+                    <p class="mt-2 text-base text-primary-100">
+                        Years in Business
+                    </p>
+                </div>
+                <div class="mt-10 sm:mt-0">
+                    <p class="text-5xl font-extrabold text-white">
+                        500+
+                    </p>
+                    <p class="mt-2 text-base text-primary-100">
+                        Satisfied Clients
+                    </p>
+                </div>
+                <div class="mt-10 sm:mt-0">
+                    <p class="text-5xl font-extrabold text-white">
+                        99.7%
+                    </p>
+                    <p class="mt-2 text-base text-primary-100">
+                        On-time Delivery
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    What Our Customers Say
+                </h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Don't just take our word for it - hear from our satisfied customers
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="http://static.photos/people/200x200/10" alt="Customer">
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Sarah Johnson</h3>
+                            <p class="text-gray-600">Logistics Manager, Acme Corp</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">
+                            "RoadRunner Express has been our trusted transportation partner for over 5 years. Their reliability and professionalism are unmatched in the industry."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="http://static.photos/people/200x200/20" alt="Customer">
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">Michael Chen</h3>
+                            <p class="text-gray-600">Operations Director, Global Trade</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">
+                            "The team at RoadRunner consistently goes above and beyond to ensure our shipments arrive on time and in perfect condition."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg">
+                    <div class="flex items-center">
+                        <div class="flex-shrink-0">
+                            <img class="h-12 w-12 rounded-full" src="http://static.photos/people/200x200/30" alt="Customer">
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-gray-900">David Wilson</h3>
+                            <p class="text-gray-600">CEO, Wilson Manufacturing</p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-gray-600">
+                            "Their real-time tracking system gives us peace of mind, and their customer service team is always responsive to our needs."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-gray-900">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                        <span class="block">Ready to ship with us?</span>
+                        <span class="block text-primary-400">Get a free quote today.</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-300">
+                        Our team is standing by to provide you with a customized transportation solution that fits your needs and budget.
+                    </p>
+                    <div class="mt-8 flex">
+                        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-primary-400 hover:bg-primary-500 transition duration-300">
+                            Request a Quote
+                        </a>
+                        <a href="#" class="ml-4 inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-700 hover:bg-gray-600 transition duration-300">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <img class="w-full rounded-lg shadow-xl" src="http://static.photos/transport/640x360/70" alt="Call to action">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Services</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Freight Shipping</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Warehousing</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Heavy Haulage</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Refrigerated Transport</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Company</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Careers</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">News</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Support</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Contact Us</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Tracking</a></li>
+                        <li><a href="#" class="text-base text-gray-400 hover:text-white">Help Center</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Connect</h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="facebook" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="twitter" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="instagram" class="h-6 w-6"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="linkedin" class="h-6 w-6"></i>
+                        </a>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">Newsletter</h4>
+                        <div class="mt-4 flex rounded-md shadow-sm">
+                            <input type="email" class="flex-1 min-w-0 block w-full px-3 py-2 rounded-l-md border-0 bg-gray-700 text-white focus:ring-2 focus:ring-primary-500 sm:text-sm" placeholder="Your email">
+                            <button class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-r-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500">
+                                Sign up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 RoadRunner Express. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
